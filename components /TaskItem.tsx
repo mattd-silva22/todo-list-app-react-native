@@ -13,7 +13,7 @@ export function TaskItem(props:TaskProps) {
         <View style={style.item}> 
             <View style={style.itemLeft}>
                 <View style={style.square}></View>
-                <Text  style={style.itemText}  >This is a task {props.text}</Text>
+                <Text  style={style.itemText}  > {props.text}</Text>
             </View>
 
             <View style={style.circular}>
@@ -38,6 +38,7 @@ const style = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent:'space-between',
+        marginTop: 10,
     },
     itemLeft: {
         flexDirection: 'row',
