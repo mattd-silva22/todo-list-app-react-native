@@ -82,7 +82,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E8EAED',
+    backgroundColor: '#171717',
+    justifyContent: 'space-between',
     
   },
 
@@ -94,6 +95,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontWeight: 'bold',
+    color: '#EDEDED'
   },
 
   items: {
@@ -107,18 +109,20 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'space-around',
       position: 'absolute',
-      bottom: 30,
+      bottom: 15,
       width: '100%',
+      
       
       
   },
   input: {
     padding: 15,
     width: 250,
-    backgroundColor: '#fff',
+    backgroundColor: '#444444',
     borderRadius: 60,
     borderColor: '#c0c0c0',
     borderWidth: 1,
+    color: 'white',
 
     
   },
@@ -126,7 +130,7 @@ const styles = StyleSheet.create({
   addWrapper: {
    width: 60,
    height: 60,
-   backgroundColor: '#fff',
+   backgroundColor: '#444444',
    borderRadius: 60,
    justifyContent: 'center',
    alignItems: 'center',

@@ -16,8 +16,8 @@ export function TaskItem(props:TaskProps) {
                 <Text  style={style.itemText}  > {props.text}</Text>
             </View>
 
-            <View style={style.circular}>
-
+            <View>
+                <Text style={style.removeBtn}>X</Text>
             </View>
             
         </View>
@@ -32,7 +32,7 @@ export function TaskItem(props:TaskProps) {
 
 const style = StyleSheet.create({
     item: {
-        backgroundColor: '#fff',
+        backgroundColor: '#444444',
         padding: 15,
         borderRadius: 10,
         flexDirection: 'row',
@@ -48,6 +48,7 @@ const style = StyleSheet.create({
 
     itemText: {
         maxWidth: '80%',
+        color: '#fff'
     },
 
     square: {
@@ -59,13 +60,11 @@ const style = StyleSheet.create({
         marginRight: 15,
     },
 
-    circular: {
-        width: 12,
-        height: 12,
-        borderColor: 'green',
-        borderWidth: 2,
-        borderRadius: 5,
+    removeBtn: {
+        color: '#DA0037'
     }
+
+    
 });
 
 
